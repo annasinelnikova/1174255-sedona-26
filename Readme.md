@@ -2,7 +2,7 @@
 
 * Студент: [Синельникова  Анна](https://up.htmlacademy.ru/htmlcss/26/user/1174255).
 * Наставник: [Натали Белоева](https://up.htmlacademy.ru/htmlcss/26/user/1123699) .
-У нас будет еще один наставник"
+
 
 ---
 
