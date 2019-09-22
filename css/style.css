@@ -1,0 +1,326 @@
+html {
+  background-color: #f2f2f2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  margin: auto;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: white;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Стили для шапки */
+
+/* Навигация по сайту */
+.main-navigation li {
+  line-height: 26px;
+  list-style: none;
+  font-weight: bold;
+}
+
+.main-navigation a:hover {
+  color: #81b3d2;
+}
+
+.main-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.current-page {
+  color: #766357;
+}
+
+/* Стили для main */
+
+.welcome {
+  height: 528px;
+  background-color: #9EDAFE;
+  background-image:
+    url("../img/intro-mask.svg"),
+    url("../img/sedona-background.jpg");
+
+  background-position:
+    bottom center,
+    top center;
+  background-repeat: no-repeat, no-repeat;
+  }
+
+.sedona-promotext {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.advantages-intro {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.advantages {
+  list-style: none;
+}
+
+.advantages h2 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.advantages-item:nth-child(1),
+.advantages-item:nth-child(2) {
+  color: #ffffff;
+  background-color: #81B3D2;
+}
+
+.benefits {
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.benefits-item {
+  color: #333333;
+}
+
+.benefits h2 {
+  color: #000000;
+}
+/* Стили для формы поиска */
+
+.search-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.search-heading {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.button {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.button-search-form {
+  background-color: #766357;
+  width: 568px;
+  height: 86px;
+}
+
+.button-search-form:hover {
+  background-color: #604E43;
+}
+
+.button-search-form:active {
+  background-color: #503E33;
+}
+
+.input-label {
+  font-weight: bold;
+  color: #000000;
+}
+
+.input-field {
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #F2F2F2;
+
+}
+.input-field:hover {
+  background-color: #ebebeb;
+}
+
+.input-field:focus {
+  background-color: #ffffff;
+}
+
+.input-field::placeholder {
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.button-submit {
+  background-color: #81B3D2;
+  width: 458px;
+  height: 58px;
+}
+
+.button-submit:hover {
+  background-color: #669EC0;
+}
+
+.button-submit:active {
+  background-color: #5496BD;
+}
+/* Стили для хештега и товарного знака */
+
+.hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.copyright {
+  line-height: 26px;
+}
+
+.html-logo:hover {
+  fill: #81b3d2;
+}
+
+.html-logo:active {
+  fill: #bdbbbc;
+}
+/* Стили для кнопок социальных сетей */
+
+.social-buttons li {
+  list-style: none;
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+  margin: 5px;
+}
+
+.social-buttons li:hover {
+  background-color: #669ec0;
+}
+
+.social-buttons li:active {
+  background-color: #5496bd;
+}
+
+.button-twitter {
+  background: url("../img/twitter.svg") no-repeat 50% 50%;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.button-twitter:active {
+  opacity: 0.3;
+}
+
+.button-facebook {
+  background: url("../img/fb-icon.svg") no-repeat 50% 50%;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.button-facebook:active {
+  opacity: 0.3;
+}
+
+.button-youtube {
+  background: url("../img/youtube.svg") no-repeat 50% 50%;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.button-youtube:active {
+  opacity: 0.3;
+}
+
+/* Стили для отелей */
+.hotels {
+  text-align: left;
+  list-style: none;
+}
+
+.hotel-name {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.hotel-name:hover {
+  color: #81b3d2;
+}
+
+.hotel-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-details {
+  width: 110px;
+  height: 27px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #81b3d2;
+  display: block;
+  }
+
+.hotel-details:hover {
+  background-color: #669ec0;
+}
+
+.hotel-details:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-booking {
+  width: 142px;
+  height: 27px;
+  border: 2px solid #766357;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  background-color: #766357;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.button-booking:hover {
+  background-color: #604e43;
+  border: 2px solid #604e43;
+}
+
+.button-booking:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+  border: 2px solid #503e33;
+}
+
+.rating {
+  color: #666666;
+  background-color: #f2f2f2;
+  width: 110px;
+  height: 27px;
+  text-align: center;
+}
