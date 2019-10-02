@@ -1,0 +1,146 @@
+.search {
+  position: relative;
+}
+
+.searching-form {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+  top: 291px;
+  left: 316px;
+  width: 458px;
+  padding: 55px;
+  text-align: left;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  background-color: white;
+}
+
+.searching-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+/*.searching-item label {*/
+/*  margin-right: 20px;*/
+/*}*/
+
+.searching-item:nth-child(1),
+.searching-item:nth-child(2) {
+  width: 458px;
+}
+
+.searching-item:nth-child(3) {
+  width: 226px;
+}
+.searching-item:nth-child(4) {
+  margin-left: auto;
+  width: 226px;
+}
+
+.search-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  width: 434px;
+  height: 96px;
+  padding-top: 57px;
+  padding-bottom: 52px;
+  padding-left: 383px;
+  padding-right: 383px;
+  margin: 0;
+}
+
+.search-heading {
+  display: block;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000000;
+  padding-bottom: 16px;
+}
+
+.button {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0;
+}
+
+.button-search-form {
+  background-color: #766357;
+  width: 568px;
+  height: 86px;
+}
+
+.button-search-form:hover {
+  background-color: #604E43;
+}
+
+.button-search-form:active {
+  background-color: #503E33;
+}
+
+.input-label {
+  /*display: block;*/
+  font-weight: bold;
+  color: #000000;
+
+}
+
+.input-field {
+  box-sizing: border-box;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  border: 0;
+  margin: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 13px;
+  width: 346px;
+  margin-left: auto;
+
+  background-color: #F2F2F2;
+}
+
+.input-field.adults-children {
+  width: 114px;
+}
+
+.input-field:hover {
+  background-color: #ebebeb;
+}
+
+.input-field:focus {
+  background-color: #ffffff;
+}
+
+.input-field::placeholder {
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.button-submit {
+  background-color: #81B3D2;
+  width: 458px;
+  height: 58px;
+  margin-top: 23px;
+}
+
+.button-submit:hover {
+  background-color: #669EC0;
+}
+
+.button-submit:active {
+  background-color: #5496BD;
+}
