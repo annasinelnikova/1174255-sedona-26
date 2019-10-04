@@ -198,12 +198,11 @@ a {
 
 /* Стили для хештега и товарного знака */
 .main-footer {
-  /*position: absolute;*/
-  /*bottom: 0;*/
+  position: absolute;
+  bottom: 0;
   opacity: 0.9;
   left: calc(50% - 600px)
 }
-
 
 .hashtag {
   font-size: 21px;
@@ -259,7 +258,7 @@ a {
   opacity: 0.3;
 }
 
-.main-footer .container {
+footer .container {
   display: flex;
   justify-content: space-between;
   padding: 36px 0;
