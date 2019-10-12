@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/hotels.css">
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="main-navigation">
-        <a>
+        <a class="logo">
           <img src="img/logo-sedona.svg" width="140" height="71" alt="Герб Седоны">
         </a>
         <ul>
@@ -22,7 +22,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main">
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
@@ -110,22 +110,30 @@
         </div>
 
         <div class="search-result--buttons">
-          <button type="button" name="up"></button>
-          <button type="button" name="down"></button>
+          <button class="btn-direction" type="button" name="up" aria-label="Сортировка по возрастанию">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#cacaca" d="M5.5 0L0 10h11z"/>
+            </svg>
+          </button>
+          <button  class="btn-direction current" type="button" name="down" aria-label="Сортировка по убыванию">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#cacaca" d="M5.5 10L0 0h11"/>
+            </svg>
+          </button>
         </div>
 
       </section>
 
-      <section>
+      <section class="search-result--hotels">
 
         <h2 class="visually-hidden">Список гостиниц</h2>
 
           <ul class="hotels">
             <li class="hotels-item">
               <div class="hotel">
-                <h3><a class="hotel-name" href="#">Amara Resort & SPA</a></h3>
+                <h3 class="hotel-name"><a href="#">Amara Resort & SPA</a></h3>
                 <div class="wrapper--hotel-text">
-                  <p class="hotel-text">Гостница</p>
+                  <p class="hotel-text">Гостиница</p>
                   <p class="hotel-text">От 4000 р.</p>
                 </div>
                 <div class="wrapper--hotel-item-buttons">
@@ -137,14 +145,18 @@
                 <img src="img/hotel-amara.jpg" width="135" height="90" alt="Amara Resort & SPA">
               </p>
               <div class="hotel-class">
-                <p class="hotel-stars four-stars">
+                <p class="hotel-stars">
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
                 </p>
                 <p class="rating">Рейтинг: 8,5</p>
               </div>
             </li>
             <li class="hotels-item">
               <div class="hotel">
-                <h3><a class="hotel-name" href="#">Desert Quail Inn</a></h3>
+                <h3 class="hotel-name"><a href="#">Desert Quail Inn</a></h3>
                 <div class="wrapper--hotel-text">
                   <p class="hotel-text">Мотель</p>
                   <p class="hotel-text">От 3000 р.</p>
@@ -158,14 +170,17 @@
                 <img src="img/hotel-desert.jpg" width="135" height="90" alt="Desert Quail Inn">
               </p>
               <div class="hotel-class">
-                <p class="hotel-stars three-stars">
+                <p class="hotel-stars">
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
                 </p>
                 <p class="rating">Рейтинг: 8,9</p>
               </div>
             </li>
             <li class="hotels-item">
               <div class="hotel">
-                <h3><a class="hotel-name" href="#">Villas At Poco Diablo</a></h3>
+                <h3 class="hotel-name"><a href="#">Villas At Poco Diablo</a></h3>
                 <div class="wrapper--hotel-text">
                   <p class="hotel-text">Апартаменты</p>
                   <p class="hotel-text">От 2000 р.</p>
@@ -179,7 +194,9 @@
                 <img src="img/hotel-villas.jpg" width="135" height="90" alt="Villas At Poco Diablo">
               </p>
               <div class="hotel-class">
-                <p class="hotel-stars two-stars">
+                <p class="hotel-stars">
+                  <span class="star"></span>
+                  <span class="star"></span>
                 </p>
                 <p class="rating">Рейтинг: 9,2</p>
               </div>
@@ -187,7 +204,7 @@
           </ul>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <p class="hashtag">#visitsedona</p>
         <div class="footer-social">
