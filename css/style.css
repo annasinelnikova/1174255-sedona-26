@@ -125,7 +125,7 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  width: 440px;
+  width: 445px;
   margin: 0 auto;
   margin-bottom: 25px;
 }
@@ -160,12 +160,12 @@ a {
 
 .advantages-number {
   display: block;
-  margin-top: 15px;
+  margin-top: 17px;
 }
 
 .advantages-number.№3-5 {
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin-top: 22px;
+  margin-bottom: 23px;
 }
 
 .advantages-item:nth-child(1),
@@ -191,11 +191,20 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 40px 46px 56px 46px;
+  width: 100%;
+}
+
+.container-text--image.image-1 {
+  padding: 43px 55px 56px 55px;
+}
+
+.container-text--image.image-2 {
+  padding: 43px 43px 56px 43px;
 }
 
 .benefits {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   background-color: #ffffff;
   padding: 0;
@@ -208,6 +217,7 @@ a {
   padding-left: 50px;
   padding-right: 50px;
   width: 33.3%;
+  box-sizing: border-box;
 }
 
 .benefits h2 {
@@ -224,7 +234,6 @@ a {
   background-image: url("../img/icon-1.svg");
   background-position: center top 60px;
   background-repeat: no-repeat;
-
 }
 
 .benefits-item.food {
@@ -243,12 +252,26 @@ a {
 .advantages-item:nth-child(4),
 .advantages-item:nth-child(5) {
   background-color: #eeeeee;
-  width: 260px;
   min-height: 143px;
   padding-top: 48px;
   padding-bottom: 58px;
+  width: 400px;
+  box-sizing: border-box;
+}
+
+.advantages-item:nth-child(3) {
   padding-left: 70px;
   padding-right: 70px;
+}
+
+.advantages-item:nth-child(4) {
+  padding-left: 67px;
+  padding-right: 67px;
+}
+
+.advantages-item:nth-child(5) {
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
 .search {
@@ -297,7 +320,7 @@ a {
   color: #333333;
   width: 445px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
 }
 
 .search-heading {
@@ -306,7 +329,7 @@ a {
   line-height: 36px;
   font-weight: bold;
   color: #000000;
-  padding-bottom: 21px;
+  padding-bottom: 23px;
   margin: 0 auto;
 }
 
@@ -527,7 +550,7 @@ a {
   opacity: 0.3;
 }
 
-footer .container {
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -630,6 +653,11 @@ input[type="radio"].visually-hidden {
   top: 0;
   width: 21px;
   height: 21px;
+
+}
+
+.filter-input-checkbox:disabled + label::before {
+  content: url("../img/checkbox-off-disabled.svg");
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -639,6 +667,18 @@ input[type="radio"].visually-hidden {
   left: -42px;
   width: 21px;
   height: 21px;
+}
+
+.filter-input-checkbox:focus + label::before {
+  outline: 3px solid #81b3d2;
+}
+
+.filter-input-checkbox:checked:disabled + label::after {
+  content: url("../img/checkbox-on-disabled.svg");
+}
+
+.filter-input-checkbox:checked:disabled + label {
+  color: #6a6a6a;
 }
 
 .filter-range {
@@ -670,10 +710,15 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.price-controls .min-price,
+.price-controls .min-price {
+  width: 90px;
+  padding-left: 35px;
+}
+
+
 .price-controls .max-price {
   width: 90px;
-  padding-left: 45px;
+  padding-left: 55px;
 }
 
 .price-controls input {
@@ -728,7 +773,7 @@ input[type="radio"].visually-hidden {
 }
 
 .range-toggle:hover {
-  border: 9px solid #ffffff;
+  transform: scale(1.1);
 }
 
 .range-toggle-min {
@@ -777,6 +822,7 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   line-height: 26px;
   margin-right: 49px;
+  flex: none;
 }
 
 .search-result--sort {
@@ -799,10 +845,12 @@ input[type="radio"].visually-hidden {
   display: flex;
   list-style: none;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .search-result--sort-type li {
   margin-right: 33px;
+  flex: none;
 }
 
 .sort-type-btn {
@@ -829,6 +877,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-result--buttons {
+  flex: none;
   margin-left: auto;
 }
 
@@ -860,7 +909,7 @@ input[type="radio"].visually-hidden {
 .hotels-item {
   display: flex;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 30px 73px;
+  padding: 30px 73px 29px 73px;
   align-items: flex-start;
 }
 
@@ -874,6 +923,11 @@ input[type="radio"].visually-hidden {
   margin-right: 30px;
   height: 90px;
 }
+
+.hotel-img img {
+  max-width: none;
+}
+
 
 .hotel {
   margin-right: 50px;
